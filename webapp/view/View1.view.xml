@@ -1,0 +1,58 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="WebApp.controller.View1">
+	<App>
+		<pages>
+			<Page title="Your Quick Start application is ready!">
+				<content>
+					<VBox direction="Column" id="vbox0" justifyContent="Center" width="100%">
+						<items>
+							<Label id="label3" text="Try out the Layout Editor and then click Run." textAlign="Center" width="100%"/>
+						</items>
+					</VBox>
+					<Table id="table0" items="{/Entity1_Set}" noDataText="Drop column list items here and columns in the area above">
+						<items>
+							<ColumnListItem counter="0" id="item1">
+								<cells>
+									<Text id="text5" maxLines="0" text="{Id}"/>
+									<Text id="text6" maxLines="0" text="{field1}"/>
+									<Text id="text7" maxLines="0" text="{field2}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<Button text="Next" width="100px" id="__button1"/>
+					<Table noDataText="Drop column list items here and columns in the area above" id="__table0">
+					    <items>
+					        <ColumnListItem counter="0" id="__item0">
+					            <cells>
+					                <Text text="Row 1 Cell 1" maxLines="0" id="__text6"/>
+					                <Text text="Row 1 Cell 2" maxLines="0" id="__text7"/>
+					                <Text text="Row 1 Cell 3" maxLines="0" id="__text8"/></cells>
+					        </ColumnListItem>
+					        <ColumnListItem counter="0" id="__item1">
+					            <cells>
+					                <Text text="Row 2 Cell 1" maxLines="0" id="__text9"/>
+					                <Text text="Row 2 Cell 2" maxLines="0" id="__text10"/>
+					                <Text text="Row 2 Cell 3" maxLines="0" id="__text11"/></cells>
+					        </ColumnListItem></items>
+					    <columns>
+					        <Column id="__column0">
+					            <header>
+					                <Label text="Process ID" id="__label0"/>
+					            </header>
+					        </Column>
+					        <Column id="__column1">
+					            <header>
+					                <Label text="Process Name" id="__label1"/>
+					            </header>
+					        </Column>
+					        <Column id="__column2">
+					            <header>
+					                <Label text="Task Name" id="__label2"/>
+					            </header>
+					        </Column></columns></Table>
+					<PullToRefresh id="__refresh1"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
